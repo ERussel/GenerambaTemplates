@@ -15,7 +15,7 @@ code_files:
 
 # The declarations for test files
 test_files:
-- {name: {{ module_info.name }}Tests.m, path: Tests/tests.swift.liquid}
+- {name: {{ module_info.name }}Tests.swift, path: Tests/tests.swift.liquid}
 
 # Template dependencies
 dependencies:
