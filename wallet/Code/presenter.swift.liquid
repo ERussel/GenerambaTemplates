@@ -1,5 +1,6 @@
 import Foundation
 
+
 final class {{ module_info.name }}Presenter {
     weak var view: {{ module_info.name }}ViewProtocol?
     var coordinator: {{ module_info.name }}CoordinatorProtocol
@@ -9,6 +10,7 @@ final class {{ module_info.name }}Presenter {
         self.coordinator = coordinator
     }
 }
+
 
 extension {{ module_info.name }}Presenter: {{ module_info.name }}PresenterProtocol {
     func setup() {}
