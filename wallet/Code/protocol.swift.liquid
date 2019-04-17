@@ -1,0 +1,14 @@
+protocol {{ module_info.name }}ViewProtocol: class {}
+
+
+protocol {{ module_info.name }}PresenterProtocol: class {
+    func setup()
+}
+
+
+protocol {{ module_info.name }}CoordinatorProtocol: class {}
+
+
+protocol {{ module_info.name }}AssemblyProtocol: class {
+	static func assembleView() -> {{ module_info.name }}ViewProtocol?
+}

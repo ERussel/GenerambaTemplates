@@ -1,0 +1,22 @@
+# Template information section
+name: wallet
+summary: mvp wallet module code generation template
+author: ERussel
+version: 1.0.0
+license: MIT
+
+# The declarations for code files
+code_files:
+- {name: Protocols.swift, path: Code/protocol.swift.liquid}
+- {name: Coordinator.swift, path: Code/coordinator.swift.liquid}
+- {name: Presenter.swift, path: Code/presenter.swift.liquid}
+- {name: ViewController.swift, path: Code/view.swift.liquid}
+- {name: Assembly.swift, path: Code/assembly.swift.liquid}
+- {name: ViewController.xib, path: Code/controller.swift.liquid}
+- {name: ModuleBuilderProtocol.swift, path: Code/builder_protocol.swift.liquid}
+- {name: ModuleBuilder.swift, path: Code/builder.swift.liquid}
+- {name: Configuration.swift, path: Code/configuration.swift.liquid}
+
+# The declarations for test files
+test_files:
+- {name: Tests.swift, path: Tests/tests.swift.liquid}

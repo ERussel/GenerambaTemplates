@@ -1,0 +1,14 @@
+import Foundation
+
+
+final class {{ module_info.name }}Assembly: {{ module_info.name }}AssemblyProtocol {
+    static func assembleView() -> {{ module_info.name }}ViewProtocol? {
+        let view = {{ module_info.name }}ViewController(nibName: "{{ module_info.name }}ViewController", bundle: Bundle(for: self))
+        let coordinator = {{ module_info.name }}Coordinator()
+
+        let presenter = {{ module_info.name }}Presenter(view: view, coordinator: coordinator)
+        view.presenter = presenter
+
+        return view
+    }
+}
