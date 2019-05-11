@@ -5,8 +5,7 @@ import Rswift
 final class {{ module_info.name }}Assembly: Assembly {
     //swiftlint:disable line_length
     func assemble(container: Container) {
-        container.register({{ module_info.name }}ViewProtocol.self) { 
-            (resolver: Resolver, coordinator: {{ module_info.name }}CoordinatorProtocol) in
+        container.register({{ module_info.name }}ViewProtocol.self) { (resolver: Resolver, coordinator: {{ module_info.name }}CoordinatorProtocol) in
             let view = {{ module_info.name }}ViewController(nib: R.nib.{{ module_info.name }}ViewController)
             let presenter = resolver.resolve({{ module_info.name }}PresenterProtocol.self, arguments: view, coordinator)
             view.presenter = presenter
@@ -14,8 +13,7 @@ final class {{ module_info.name }}Assembly: Assembly {
             return view
         }
 
-        container.register({{ module_info.name }}PresenterProtocol.self) { 
-            (resolver: Resolver, view: {{ module_info.name }}ViewProtocol, coordinator: {{ module_info.name }}CoordinatorProtocol) in
+        container.register({{ module_info.name }}PresenterProtocol.self) { (resolver: Resolver, view: {{ module_info.name }}ViewProtocol, coordinator: {{ module_info.name }}CoordinatorProtocol) in
 
             return {{ module_info.name }}Presenter(view: view, coordinator: coordinator)
         }
