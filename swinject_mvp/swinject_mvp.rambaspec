@@ -7,16 +7,18 @@ license: MIT
 
 # The declarations for code files
 code_files:
-- {name: {{ module_info.name }}Protocol.swift, path: Code/protocol.swift.liquid}
-- {name: {{ module_info.name }}Coordinator.swift, path: Code/coordinator.swift.liquid}
-- {name: {{ module_info.name }}Presenter.swift, path: Code/presenter.swift.liquid}
-- {name: {{ module_info.name }}ViewController.swift, path: Code/view.swift.liquid}
-- {name: {{ module_info.name }}Assembly.swift, path: Code/assembly.swift.liquid}
+- {name: Protocol.swift, path: Code/protocol.swift.liquid}
+- {name: Coordinator.swift, path: Code/coordinator.swift.liquid}
+- {name: Presenter.swift, path: Code/presenter.swift.liquid}
+- {name: ViewController.swift, path: Code/view.swift.liquid}
+- {name: ViewController.xib, path: Code/controller.swift.liquid}
+- {name: Assembly.swift, path: Code/assembly.swift.liquid}
 
 # The declarations for test files
 test_files:
-- {name: {{ module_info.name }}Tests.swift, path: Tests/tests.swift.liquid}
+- {name: Tests.swift, path: Tests/tests.swift.liquid}
 
 # Template dependencies
 dependencies:
 - Swinject
+- R.swift

@@ -4,7 +4,7 @@ import Swinject
 final class {{ module_info.name }}Assembly: Assembly {
     func assemble(container: Container) {
         container.register({{ module_info.name }}ViewProtocol.self) { (r: Resolver, coordinator: {{ module_info.name }}CoordinatorProtocol) in
-            let view = {{ module_info.name }}ViewController()
+            let view = {{ module_info.name }}ViewController(nib: R.nib.{{ module_info.name }}ViewController)
             let presenter = r.resolve({{ module_info.name }}PresenterProtocol.self, arguments: view, coordinator)
             view.presenter = presenter
 
