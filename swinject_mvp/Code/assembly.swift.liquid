@@ -13,7 +13,7 @@ final class {{ module_info.name }}Assembly: Assembly {
             return view
         }
 
-        container.register({{ module_info.name }}PresenterProtocol.self) { (resolver: Resolver, view: {{ module_info.name }}ViewProtocol, coordinator: {{ module_info.name }}CoordinatorProtocol) in
+        container.register({{ module_info.name }}PresenterProtocol.self) { (_, view: {{ module_info.name }}ViewProtocol, coordinator: {{ module_info.name }}CoordinatorProtocol) in
 
             return {{ module_info.name }}Presenter(view: view, coordinator: coordinator)
         }
