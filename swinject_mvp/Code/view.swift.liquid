@@ -3,7 +3,7 @@ import UIKit
 final class {{ module_info.name }}ViewController: UIViewController {
     var presenter: {{ module_info.name }}PresenterProtocol!
 
-    ovveride func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
 
         presenter.viewIsReady()
