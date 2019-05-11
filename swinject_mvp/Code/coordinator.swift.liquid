@@ -9,7 +9,7 @@ final class {{ module_info.name }}Coordinator {
     }
 
     func start() {
-        let view = resolver.resolve({{ module_info.name }}ViewProtocol.self, self)
+        let view = resolver.resolve({{ module_info.name }}ViewProtocol.self, argument: self)
 
         // TODO: Insert view presentation logic here
     }

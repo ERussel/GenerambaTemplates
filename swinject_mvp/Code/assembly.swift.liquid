@@ -3,6 +3,7 @@ import Swinject
 import Rswift
 
 final class {{ module_info.name }}Assembly: Assembly {
+    //swiftlint:disable line_length
     func assemble(container: Container) {
         container.register({{ module_info.name }}ViewProtocol.self) { 
             (resolver: Resolver, coordinator: {{ module_info.name }}CoordinatorProtocol) in
@@ -19,4 +20,5 @@ final class {{ module_info.name }}Assembly: Assembly {
             return {{ module_info.name }}Presenter(view: view, coordinator: coordinator)
         }
     }
+    //swiftlint:enable line_length
 }
