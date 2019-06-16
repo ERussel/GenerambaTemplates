@@ -1,0 +1,9 @@
+import UIKit
+
+
+final class {{ module_info.name }}Interactor {
+    weak var presenter: {{ module_info.name }}InteractorOutputProtocol!
+}
+
+
+extension {{ module_info.name }}Interactor: {{ module_info.name }}InteractorInputProtocol {}

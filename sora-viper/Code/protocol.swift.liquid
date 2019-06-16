@@ -1,0 +1,15 @@
+protocol {{ module_info.name }}ViewProtocol: class {}
+
+protocol {{ module_info.name }}PresenterProtocol: class {
+    func setup()
+}
+
+protocol {{ module_info.name }}InteractorInputProtocol: class {}
+
+protocol {{ module_info.name }}InteractorOutputProtocol: class {}
+
+protocol {{ module_info.name }}WireframeProtocol: class {}
+
+protocol {{ module_info.name }}ViewFactoryProtocol: class {
+	static func createView() -> {{ module_info.name }}ViewProtocol?
+}

@@ -1,0 +1,19 @@
+import Foundation
+
+
+final class {{ module_info.name }}ViewFactory: {{ module_info.name }}ViewFactoryProtocol {
+    static func createView() -> {{ module_info.name }}ViewProtocol? {
+        let view = {{ module_info.name }}ViewController(nib: R.nib.{{ module_info.name }}ViewController)
+        let presenter = {{ module_info.name }}Presenter()
+        let interactor = {{ module_info.name }}Interactor()
+        let wireframe = {{ module_info.name }}Wireframe()
+
+        view.presenter = presenter
+        presenter.view = view
+        presenter.interactor = interactor
+        presenter.wireframe = wireframe
+        interactor.presenter = presenter
+
+        return view
+    }
+}
