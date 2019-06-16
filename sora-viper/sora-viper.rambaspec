@@ -7,7 +7,7 @@ license: MIT
 
 # The declarations for code files
 code_files:
-- {name: Protocol.swift, path: Code/protocol.swift.liquid}
+- {name: Protocols.swift, path: Code/protocol.swift.liquid}
 - {name: Wireframe.swift, path: Code/wireframe.swift.liquid}
 - {name: Presenter.swift, path: Code/presenter.swift.liquid}
 - {name: Interactor.swift, path: Code/interactor.swift.liquid}
