@@ -12,7 +12,7 @@ code_files:
 - {name: Presenter.swift, path: Code/presenter.swift.liquid}
 - {name: Interactor.swift, path: Code/interactor.swift.liquid}
 - {name: ViewController.swift, path: Code/view.swift.liquid}
-- {name: ViewLayout.swift, path: Code/View/viewlayout.swift.liquid}
+- {name: ViewLayout.swift, path: Code/viewlayout.swift.liquid}
 - {name: ViewFactory.swift, path: Code/viewfactory.swift.liquid}
 
 # The declarations for test files
