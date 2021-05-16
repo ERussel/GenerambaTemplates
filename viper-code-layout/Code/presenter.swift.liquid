@@ -1,0 +1,21 @@
+import Foundation
+
+final class {{ module_info.name }}Presenter {
+    weak var view: {{ module_info.name }}ViewProtocol?
+    let wireframe: {{ module_info.name }}WireframeProtocol
+    let interactor: {{ module_info.name }}InteractorInputProtocol
+
+    init(
+        interactor: {{ module_info.name }}InteractorInputProtocol,
+        wireframe: {{ module_info.name }}WireframeProtocol
+    ) {
+        self.interactor = interactor
+        self.wireframe = wireframe
+    }
+}
+
+extension {{ module_info.name }}Presenter: {{ module_info.name }}PresenterProtocol {
+    func setup() {}
+}
+
+extension {{ module_info.name }}Presenter: {{ module_info.name }}InteractorOutputProtocol {}
