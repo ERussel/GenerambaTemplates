@@ -1,6 +1,6 @@
 import Foundation
 
-final class {{ module_info.name }}ViewFactory {
+struct {{ module_info.name }}ViewFactory {
     static func createView() -> {{ module_info.name }}ViewProtocol? {
         let interactor = {{ module_info.name }}Interactor()
         let wireframe = {{ module_info.name }}Wireframe()
