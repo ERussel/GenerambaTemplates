@@ -1,11 +1,11 @@
-protocol {{ module_info.name }}ViewProtocol: class {}
+protocol {{ module_info.name }}ViewProtocol: AnyObject {}
 
-protocol {{ module_info.name }}PresenterProtocol: class {
+protocol {{ module_info.name }}PresenterProtocol: AnyObject {
     func setup()
 }
 
-protocol {{ module_info.name }}InteractorInputProtocol: class {}
+protocol {{ module_info.name }}InteractorInputProtocol: AnyObject {}
 
-protocol {{ module_info.name }}InteractorOutputProtocol: class {}
+protocol {{ module_info.name }}InteractorOutputProtocol: AnyObject {}
 
-protocol {{ module_info.name }}WireframeProtocol: class {}
+protocol {{ module_info.name }}WireframeProtocol: AnyObject {}
